@@ -2766,25 +2766,6 @@
   <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
 </gnc:account>
 <gnc:account version="2.0.0">
-  <act:name>2700 Kassenbeständ</act:name>
-  <act:id type="guid">e81240cdc46f69db2eb76b8af40d106b</act:id>
-  <act:type>ASSET</act:type>
-  <act:commodity>
-    <cmdty:space>ISO4217</cmdty:space>
-    <cmdty:id>EUR</cmdty:id>
-  </act:commodity>
-  <act:commodity-scu>100</act:commodity-scu>
-  <act:code>2700</act:code>
-  <act:description>2700 Kassenbeständ</act:description>
-  <act:slots>
-    <slot>
-      <slot:key>color</slot:key>
-      <slot:value type="string">Not Set</slot:value>
-    </slot>
-  </act:slots>
-  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
-</gnc:account>
-<gnc:account version="2.0.0">
   <act:name>2780 (Erhaltene) Schecks</act:name>
   <act:id type="guid">b7fcfa8427401d83baeb5a9702d06bf3</act:id>
   <act:type>ASSET</act:type>
