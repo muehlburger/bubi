@@ -1,0 +1,459 @@
+\documentclass[parskip=half,12pt,a4paper]{scrartcl}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[naustrian]{babel}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[automark]{scrpage2}
+\pagestyle{scrheadings}
+
+\begin{document}
+\title{Beispiel 4: Ablauf der Doppik - Unternehmensgründung Leitl}
+\author{Dipl.-Ing. Herbert Mühlburger}
+\maketitle
+
+Im folgenden werden die
+\begin{enumerate}
+	\item Eröffnungsbuchungen 
+	\item Verbuchung der laufenden Geschäftsfälle
+	\item Nachbuchungen
+	\item Abschlussbuchungen
+\end{enumerate}
+dargestellt.
+
+\minisec{Eröffnungsbilanz zum 01.10.}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{Eröffnungsbilanz 01.10.}\\
+		\toprule
+		Anlagevermögen & 0.- & Eigenkapital & 150.000.-\\
+		Umlaufvermögen & 150.000.- & Fremdkapital & 0.-\\
+		\bottomrule
+		Summe & 150.000.- & Summe & 150.000.-\\
+	\end{tabular}
+\end{center}
+
+\section{Eröffnungsbuchungen}
+
+\minisec{(1) 01.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (2700) Kassa & 150.000.- &\\
+ an & (9800) Eröffnungsbilanzkonto & & 150.000.-\\
+ \bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(2) 01.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9800) Eröffnungsbilanzkonto & 150.000.- &\\
+ an & (9000) Eigenkapitalkonto (EKK) & & 150.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{Eröffnungsbilanzkonto}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(9899) Eröffnungsbilanzkonto}\\
+		\toprule
+		Eigenkapital & 150.000.- & Kassa & 150.000.- \\
+		\bottomrule
+		Summe & 150.000.- & Summe & 150.000.-\\
+	\end{tabular}
+\end{center}
+
+Damit sind die Eröffnungsbuchungen abgeschlossen. Alle weiteren Buchungen betreffen die laufenden Geschäftsfälle.
+
+\section{Verbuchung der laufenden Geschäftsfälle}
+
+\minisec{(3) 02.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (7400) Mietaufwand & 2.000.- &\\
+ an & (2700) Kassa & & 2.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(4) 05.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (0600) Büroeinrichtungen & 7.000.- &\\
+ an & (2700) Kassa & & 7.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(5) 08.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (1600) Waren (Handelswaren) & 80.000.- &\\
+ an & (3300) Verbindlichkeiten aus Lieferungen u. Leistung Inland & & 80.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(6) 12.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (2000) Lieferforderungen & 100.000.- &\\
+ an & (4000) Umsatzerlöse Inland (20\% USt) & & 100.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(7) 15.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (3300) Lieferverbindlichkeiten & 20.000.- &\\
+ an & (2700) Kassa & & 20.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Nachbuchungen}
+
+In diesem Beispiel werden die Abschreibung und der Verbrauch in den Nachbuchungen erfasst.
+
+\minisec{(8) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (7020) Planmäßige Abschreibung & 200.- &\\
+ an & (0600) Büroeinrichtung & & 200.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Die Inventur am 31.10. ergab einen Handelswarenvorrat von 100.-. Dadurch kann der Handelswarenverbrauch berechnet werden: Gekaufte Handeslwaren im Wert von 80.000.- minus dem Handelswarenvorrat am 31.10 von 100.- ergibt 79.900.-. Dieser Wert wird jetzt alsl Aufwand verbucht:
+
+\minisec{(9) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (5300) Handelswarenverbrauch & 79.900.- &\\
+ an & (1600) Waren (Handelswaren) & & 79.900.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Abschlussbuchungen}
+\subsection{G\&V Buchungen}
+
+Im nächsten Schritt werden alle Erfolgskonten (Aufwands- und Ertragskonten) gegen das Gewinn und Verlustkonto (GuV-Konto) abgeschlossen. Das GuV-Konto wird am Ende gegen das Eigenkapitalkonto (EKK) abgeschlossen.
+
+\minisec{(10) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9890) GuV & 2.000.- &\\
+ an & (7400) Mietaufwand & & 2.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(11) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (4000) Umsatzerlöse Inland (20\% USt) & 100.000.- &\\
+ an & (9890) GuV & & 100.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(12) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9890) GuV & 200.- &\\
+ an & (7020) Planmäßige Abschreibung & & 200.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(13) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9890) GuV & 79.900.- &\\
+ an & (5300) Handelswarenverbrauch & & 79.900.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(14) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9890) GuV & 17.900.- &\\
+ an & (9000) Eigenkapitalkonto & &17.900.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\subsection{Schlussbilanzbuchungen}
+Im nächsten Schritt werden alle Bestandskonten (aktive und passive) gegen das Schlussbilanzkonto abgeschlossen.
+
+\minisec{(15) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9850) SBK & 6.800.- &\\
+ an & (0600) Büroeinrichtungen & & 6.800.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(16) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9850) SBK & 100.- &\\
+ an & (1600) Waren (Handelswaren) & & 100.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(17) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9850) SBK & 121.000.- &\\
+ an & (2700) Kassa & & 121.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(18) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9850) SBK & 100.000.- &\\
+ an & (2000) Lieferforderungen & & 100.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(19) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (3300) Lieferverbindlichkeiten & 60.000.- &\\
+ an & (9850) SBK & & 60.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(20) 31.10}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9000) Eigenkapitalkonto & 167.900.- &\\
+ an & (9850) SBK & & 167.900.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Hauptbuch (dargestellt als T-Konten)}
+
+\subsection{aktive Bestandskonten}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(0600) Büroeinrichtungen}\\
+		\toprule
+		(4) & 7.000.- & (8) & 200.-\\
+		& & (15) & 6.800.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(1600) Waren (Handelswaren)}\\
+		\toprule
+		(5) & 80.000.- & (9) & 79.900.-\\
+		& & (16) & 100.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(2000) Lieferforderungen}\\
+		\toprule
+		(6) & 100.000.- & (18) & 100.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(2700) Kassa}\\
+		\toprule
+		(1) & 150.000.- & (3) & 2.000.-\\
+		& & (4) & 7.000.-\\
+		& & (7) & 20.000.-\\
+		& & (17) & 121.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+
+
+\subsection{passive Bestandskonten}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(3300) Lieferverbindlichkeiten}\\
+		\toprule
+		(7) & 20.000.- & (5) & 80.000.-\\
+		(19) & 60.000.- & &\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\subsection{Ertragskonten}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(4000) Umsatzerlöse Inland (20\% USt)}\\
+		\midrule
+		(11) & 100.000.- & (6) & 100.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\subsection{Aufwandskonten}
+
+\minisec{Warenverbrauch}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(5300) Handelswarenverbrauch}\\
+		\toprule
+		(9) & 79.900.- & (13) & 79.900.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(7020) Planmäßige Abschreibung}\\
+		\toprule
+		(8) & 200.- & (12) & 200.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(7400) Mietaufwand}\\
+		\toprule
+		(3) & 2.000.- & (10) & 2.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\subsection{Hilfskonten}
+
+\begin{center}
+\begin{tabular}{lr|lr}
+	\multicolumn{4}{c}{(9000) Eigenkapitalkonto}\\
+	\toprule
+	(20) & 167.900.- & (2) & 150.000.-\\
+	& & (14) & 17.900.-\\
+	\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lr|lr}
+\multicolumn{4}{c}{(9800) Eröffnungsbilanzkonto}\\
+\toprule
+(2) & 150.000.- & (1) & 150.000.-\\
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lr|lr}
+\multicolumn{4}{c}{(9850) SBK}\\
+\toprule
+(15) & 6.800.- & (19) & 60.000.-\\
+(16) & 100.- & (20) & 167.900.-\\
+(17) & 121.000.- & &\\
+(18) & 100.000.- & &\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(9890) GuV}\\
+		\toprule
+		(10) & 2.000.- & (11) & 100.000.-\\
+		(12) & 200.- & &\\
+		(13) & 79.900.- & &\\
+		(14) & 17.900.- & &\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+Die Gewinnermittlung über den Reinvermögensvergleich wird folgendermaßen durchgeführt:
+
+\minisec{Eröffnungsbilanz}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{Eröffnungsbilanz 01.10.}\\
+		\toprule
+		Anlagevermögen & 0.- & Eigenkapital & 150.000.-\\
+		Umlaufvermögen & 150.000.- & Fremdkapital & 0.-\\
+		\bottomrule
+		Summe & 150.000.- & Summe & 150.000.-\\
+	\end{tabular}
+\end{center}
+
+\minisec{Schlussbilanz}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{Schlussbilanz 31.10.}\\
+		\toprule
+		Anlagevermögen & 6.800.- & Eigenkapital & 167.900.-\\
+		Umlaufvermögen & 221.100.- & Fremdkapital & 60.000.-\\
+		\bottomrule
+		Summe & 227.900.- & Summe & 227.900.-\\
+	\end{tabular}
+\end{center}
+
+Die Ermittlung des Periodengewinnes durch Betriebsvermögensvergleich wird folgendermaßen durchgeführt:
+
+\begin{center}
+	\begin{tabular}{lcrr}
+		Gesamtvermögen & 31.10. & 227.900.- &\\
+		- Fremdkapital & 31.10. & -60.000.- &\\
+		\midrule
+		Reinvermögen & 31.10 & 167.900.-& 167.900.-\\		
+		Gesamtvermögen & 01.10. & 150.000.- &\\
+		- Fremdkapital & 01.10. & -0.- &\\
+		\midrule
+		Reinvermögen & 01.10. & 150.000.- & -150.000.-\\
+		\midrule
+		Gewinn & & & 17.900.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+Somit ergibt sich ein Gewinn von Euro \emph{17.900.-}.
+
+\end{document}
