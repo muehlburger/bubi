@@ -1,0 +1,3327 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gnc-v2
+     xmlns:gnc="http://www.gnucash.org/XML/gnc"
+     xmlns:act="http://www.gnucash.org/XML/act"
+     xmlns:book="http://www.gnucash.org/XML/book"
+     xmlns:cd="http://www.gnucash.org/XML/cd"
+     xmlns:cmdty="http://www.gnucash.org/XML/cmdty"
+     xmlns:price="http://www.gnucash.org/XML/price"
+     xmlns:slot="http://www.gnucash.org/XML/slot"
+     xmlns:split="http://www.gnucash.org/XML/split"
+     xmlns:sx="http://www.gnucash.org/XML/sx"
+     xmlns:trn="http://www.gnucash.org/XML/trn"
+     xmlns:ts="http://www.gnucash.org/XML/ts"
+     xmlns:fs="http://www.gnucash.org/XML/fs"
+     xmlns:bgt="http://www.gnucash.org/XML/bgt"
+     xmlns:recurrence="http://www.gnucash.org/XML/recurrence"
+     xmlns:lot="http://www.gnucash.org/XML/lot"
+     xmlns:addr="http://www.gnucash.org/XML/addr"
+     xmlns:owner="http://www.gnucash.org/XML/owner"
+     xmlns:billterm="http://www.gnucash.org/XML/billterm"
+     xmlns:bt-days="http://www.gnucash.org/XML/bt-days"
+     xmlns:bt-prox="http://www.gnucash.org/XML/bt-prox"
+     xmlns:cust="http://www.gnucash.org/XML/cust"
+     xmlns:employee="http://www.gnucash.org/XML/employee"
+     xmlns:entry="http://www.gnucash.org/XML/entry"
+     xmlns:invoice="http://www.gnucash.org/XML/invoice"
+     xmlns:job="http://www.gnucash.org/XML/job"
+     xmlns:order="http://www.gnucash.org/XML/order"
+     xmlns:taxtable="http://www.gnucash.org/XML/taxtable"
+     xmlns:tte="http://www.gnucash.org/XML/tte"
+     xmlns:vendor="http://www.gnucash.org/XML/vendor">
+<gnc:count-data cd:type="commodity">1</gnc:count-data>
+<gnc:count-data cd:type="account">172</gnc:count-data>
+<gnc:commodity version="2.0.0">
+  <cmdty:space>ISO4217</cmdty:space>
+  <cmdty:id>EUR</cmdty:id>
+  <cmdty:get_quotes/>
+  <cmdty:quote_source>currency</cmdty:quote_source>
+  <cmdty:quote_tz/>
+</gnc:commodity>
+<gnc:commodity version="2.0.0">
+  <cmdty:space>template</cmdty:space>
+  <cmdty:id>template</cmdty:id>
+  <cmdty:name>template</cmdty:name>
+  <cmdty:xcode>template</cmdty:xcode>
+  <cmdty:fraction>1</cmdty:fraction>
+</gnc:commodity>
+<gnc:account version="2.0.0">
+  <act:name>Root Account</act:name>
+  <act:id type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:id>
+  <act:type>ROOT</act:type>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4 Betriebliche Erträge</act:name>
+  <act:id type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4</act:code>
+  <act:description>4 Betriebliche Erträge</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4000 Umsatzerlöse Inland (20% USt)</act:name>
+  <act:id type="guid">697d180a905b1beb32c115f54cfe4bb1</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4000</act:code>
+  <act:description>4000 Umsatzerlöse Inland (20% USt)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4010 Umsatzerlöse Inland (10% USt)</act:name>
+  <act:id type="guid">777de58b91c9874c1d9cca0ad6990024</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4010</act:code>
+  <act:description>4010 Umsatzerlöse Inland (10% USt)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4030 Exporterlöse</act:name>
+  <act:id type="guid">f470b8c86e4e948eed1e12c004267d5d</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4030</act:code>
+  <act:description>4030 Exporterlöse</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4400 Erlösberichtigungen Inland (20% USt)</act:name>
+  <act:id type="guid">e74ce63514f8092c901a4f4bb23227e7</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4400</act:code>
+  <act:description>4400 Erlösberichtigungen Inland (20% USt)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4440 Skontoaufwand Inland (20% USt)</act:name>
+  <act:id type="guid">2fdcf3679a1873b6c009b8f2e8714142</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4440</act:code>
+  <act:description>4440 Skontoaufwand Inland (20% USt)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4500 Bestandsveränderung</act:name>
+  <act:id type="guid">aa76bfa2f60d2b30969a6555f42d12dc</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4500</act:code>
+  <act:description>4500 Bestandsveränderung</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4580 Aktivierte Eigenleistungen</act:name>
+  <act:id type="guid">22b2eeb03465eb36bc71ba8615d5ec9c</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4580</act:code>
+  <act:description>4580 Aktivierte Eigenleistungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4600 Erlöse aus dem Abgang von Anlagen</act:name>
+  <act:id type="guid">5a328942f50f96f855ff54241f840112</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4600</act:code>
+  <act:description>4600 Erlöse aus dem Abgang von Anlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4630 Erträge aus dem Abgang von Anlagen</act:name>
+  <act:id type="guid">e8def700bab74252bf59910419e8ec5e</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4630</act:code>
+  <act:description>4630 Erträge aus dem Abgang von Anlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4650 Erträge aus der Zuschreibung zu Sachanlagen</act:name>
+  <act:id type="guid">b23af2ff4c758a0194b9647737ed47ce</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4650</act:code>
+  <act:description>4650 Erträge aus der Zuschreibung zu Sachanlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4760 Erträge aus der Auflösung von sonst. Rückstellungen</act:name>
+  <act:id type="guid">cda6849424ea1169ec0a30788b9e4834</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4760</act:code>
+  <act:description>4760 Erträge aus der Auflösung von sonst. Rückstellungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4800 Sonstige betriebliche Erträge</act:name>
+  <act:id type="guid">8ab46ef3541caf9a40b9710eec2abe32</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4800</act:code>
+  <act:description>4800 Sonstige betriebliche Erträge</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4820 Eigenverbrauch (Sachbezug)</act:name>
+  <act:id type="guid">8eb40ea54baef69c38781852371b3444</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4820</act:code>
+  <act:description>4820 Eigenverbrauch (Sachbezug)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4900 Erträge aus der Auflösung von Wertberichtigungen</act:name>
+  <act:id type="guid">d3d7928d1290f3111ba124b667f52cf9</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4900</act:code>
+  <act:description>4900 Erträge aus der Auflösung von Wertberichtigungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>4950 Erträge aus der Auflösung von Investitionszuschüssen</act:name>
+  <act:id type="guid">b4f2a2387b500169789621108b06e5ce</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>4950</act:code>
+  <act:description>4950 Erträge aus der Auflösung von Investitionszuschüssen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bc01685f9a1410c5c4a1ba8ad6f9c723</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>5 Materialaufwand und Aufwand für sonst. bezogene Leistungen</act:name>
+  <act:id type="guid">968c1180a81d4357e555fd9611d883ef</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>5</act:code>
+  <act:description>5 Materialaufwand und Aufwand für sonst. bezogene Leistungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>5100 Verbrauch von Rohstoffen</act:name>
+  <act:id type="guid">07c63eec7d3a7db9e0ada6176030b382</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>5100</act:code>
+  <act:description>5100 Verbrauch von Rohstoffen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">968c1180a81d4357e555fd9611d883ef</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>5300 Handelswarenverbrauch</act:name>
+  <act:id type="guid">62a7546f3566f1c0a3afcd2ee2016bc0</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>5300</act:code>
+  <act:description>5300 Handelswarenverbrauch</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">968c1180a81d4357e555fd9611d883ef</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>5400 Verbrauch von Hilfsstoffen</act:name>
+  <act:id type="guid">5059d19907e26567e9a6ed9c5f6e4ec0</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>5400</act:code>
+  <act:description>5400 Verbrauch von Hilfsstoffen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">968c1180a81d4357e555fd9611d883ef</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>5880 Skontoerträge auf Materialeinkauf (20% Ust)</act:name>
+  <act:id type="guid">5c696308a8e8e99f074f5ce7886f85f0</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>5880</act:code>
+  <act:description>5880 Skontoerträge auf Materialeinkauf (20% Ust)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">968c1180a81d4357e555fd9611d883ef</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6 Personalaufwand</act:name>
+  <act:id type="guid">b6674715ef6952e18ae4e78b6f989434</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6</act:code>
+  <act:description>6 Personalaufwand</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6000 Löhne</act:name>
+  <act:id type="guid">cc9c23e2c82ad408c5edecaf7da17037</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6000</act:code>
+  <act:description>6000 Löhne</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6200 Gehälter</act:name>
+  <act:id type="guid">493435d364b86d9e48f99207a3c06a6b</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6200</act:code>
+  <act:description>6200 Gehälter</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6405 Dotierung Abfertigungsrückstellung</act:name>
+  <act:id type="guid">ef19bc135353e3f9461547fa75bf5441</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6405</act:code>
+  <act:description>6405 Dotierung Abfertigungsrückstellung</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6410 Betriebliche Mitarbeitervorsorge</act:name>
+  <act:id type="guid">96e244df6cf5517d60ce80653f65f71c</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6410</act:code>
+  <act:description>6410 Betriebliche Mitarbeitervorsorge</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6455 Dotierung Pensionsrückstellung</act:name>
+  <act:id type="guid">93dce6b36e7cf3e11b41b835bc83ba00</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6455</act:code>
+  <act:description>6455 Dotierung Pensionsrückstellung</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6500 Gesetzlicher Sozialaufwand Arbeiter</act:name>
+  <act:id type="guid">a28fcec8d8d5002683e027c3d32ad6c8</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6500</act:code>
+  <act:description>6500 Gesetzlicher Sozialaufwand Arbeiter</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6560 Gesetzlicher Sozialaufwand Angestellte</act:name>
+  <act:id type="guid">ff1d400985aa3b1754b7792e84794f76</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6560</act:code>
+  <act:description>6560 Gesetzlicher Sozialaufwand Angestellte</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6600 Kommunalsteuer</act:name>
+  <act:id type="guid">1788d02f8b318725b579e0b76bcad9db</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6600</act:code>
+  <act:description>6600 Kommunalsteuer</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6610 Dienstgeberbeitrag zur Familienbeihilfe (DB)</act:name>
+  <act:id type="guid">86f19aed0b8724bb425c70dc1448d531</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6610</act:code>
+  <act:description>6610 Dienstgeberbeitrag zur Familienbeihilfe (DB)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>6615 Zuschlag zum DB</act:name>
+  <act:id type="guid">61406d44454c5ff30919231569b672bb</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>6615</act:code>
+  <act:description>6615 Zuschlag zum DB</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">b6674715ef6952e18ae4e78b6f989434</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7 Abschreibungen u. sonst. betriebliche Aufwendungen</act:name>
+  <act:id type="guid">08e0399258423353f75217fc8c2c375e</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7</act:code>
+  <act:description>7 Abschreibungen u. sonst. betriebliche Aufwendungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7000 Abschreibung immaterieller Anlagegegenstände</act:name>
+  <act:id type="guid">af9453741d9aec78a8a78b73f96de90d</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7000</act:code>
+  <act:description>7000 Abschreibung immaterieller Anlagegegenstände</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7020 Planmäßige Abschreibung von Sachanlagen</act:name>
+  <act:id type="guid">9ef6af5c7681efd12ef65ede75b4cd96</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7020</act:code>
+  <act:description>7020 Planmäßige Abschreibung von Sachanlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7030 Außerplanmäßige Abschreibung von Sachanlagen</act:name>
+  <act:id type="guid">276f094cc29276f05dd36cf1b6216ed2</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7030</act:code>
+  <act:description>7030 Außerplanmäßige Abschreibung von Sachanlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7040 Geringwertige Wirtschaftsgüter</act:name>
+  <act:id type="guid">89724e81958dc0cf95f4abf4a91398b6</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>704</act:code>
+  <act:description>7040 Geringwertige Wirtschaftsgüter</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7200 Instandhaltung durch Dritte</act:name>
+  <act:id type="guid">5608752230da68bb4c589d28953f5981</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7200</act:code>
+  <act:description>7200 Instandhaltung durch Dritte</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7300 Transporte durch Dritte</act:name>
+  <act:id type="guid">45575af4f27bc41eafc42fd7bad27dba</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7300</act:code>
+  <act:description>7300 Transporte durch Dritte</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7350 Porto, Postgebühren</act:name>
+  <act:id type="guid">f1c2692f35350f4db316292adbfe66a8</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7350</act:code>
+  <act:description>7350 Porto, Postgebühren</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7400 Mietaufwand</act:name>
+  <act:id type="guid">9c674e387efe823ac94aca8ee3e70164</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7400</act:code>
+  <act:description>7400 Mietaufwand</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7700 Versicherungsaufwand</act:name>
+  <act:id type="guid">1220a8035fb39e789c348907eb3f1edb</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7700</act:code>
+  <act:description>7700 Versicherungsaufwand</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7750 Rechts- und Steuerberatung</act:name>
+  <act:id type="guid">ba4c5ea39b61edeb509b76ea1729d898</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7750</act:code>
+  <act:description>7750 Rechts- und Steuerberatung</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7790 Spesen des Geldverkehrs</act:name>
+  <act:id type="guid">bbebf171fd7fe4e32f297bb0a10e3968</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7790</act:code>
+  <act:description>7790 Spesen des Geldverkehrs</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7800 Abschreibung und Wertberichtigung von Vorräten</act:name>
+  <act:id type="guid">89a6cf63bd348eb14c2543a249413a95</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7800</act:code>
+  <act:description>7800 Abschreibung und Wertberichtigung von Vorräten</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7810 Abschreibung Exportforderungen</act:name>
+  <act:id type="guid">28d0e492e9c0b9c2ce3aac764a64b31b</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7810</act:code>
+  <act:description>7810 Abschreibung Exportforderungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7812 Abschreibung Inlandsforderung</act:name>
+  <act:id type="guid">5f5241beba17dabde20ef8165d7fc117</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7812</act:code>
+  <act:description>7812 Abschreibung Inlandsforderung</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7815 Zuweisung Einzel-WB zu Forderungen</act:name>
+  <act:id type="guid">f73a51d7b9ddc7204cdb91c701519130</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7815</act:code>
+  <act:description>7815 Zuweisung Einzel-WB zu Forderungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7820 Buchwert abgegangener Anlagen</act:name>
+  <act:id type="guid">9a892c71573fd2c20f6eca76aba83d1b</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7820</act:code>
+  <act:description>7820 Buchwert abgegangener Anlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>7830 Verluste aus dem Abgang von Anlagen</act:name>
+  <act:id type="guid">a804193058d198dbc6b44855fd594871</act:id>
+  <act:type>EXPENSE</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>7830</act:code>
+  <act:description>7830 Verluste aus dem Abgang von Anlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">08e0399258423353f75217fc8c2c375e</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8 Finanzerträge u. -aufwendungen, a.o. Erträge u. Aufwendungen</act:name>
+  <act:id type="guid">0c7bd55d818514911206e2d7a219e0b0</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8</act:code>
+  <act:description>8 Finanzerträge u. -aufwendungen, a.o. Erträge u. Aufwendungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8060 Zinsertrag aus Bankguthaben</act:name>
+  <act:id type="guid">a48e00475efcab7307a624d95694f21e</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8060</act:code>
+  <act:description>8060 Zinsertrag aus Bankguthaben</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8070 Zinserträge</act:name>
+  <act:id type="guid">1e3177ce7b68a05d5720efd4978acb1a</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8070</act:code>
+  <act:description>8070 Zinserträge</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8100 Zinserträge aus festverzinslichen Wertpapieren</act:name>
+  <act:id type="guid">4aa15c6940f9b4720047f05caa7195cc</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8100</act:code>
+  <act:description>8100 Zinserträge aus festverzinslichen Wertpapieren</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8150 Erlöse aus dem Abgang von sonstigen Finanzanlagen</act:name>
+  <act:id type="guid">6bdff9f4e6f8764d1b7b4c8e0ea2a910</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8150</act:code>
+  <act:description>8150 Erlöse aus dem Abgang von sonstigen Finanzanlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8160 Erträge aus Abgang/Zuschreibung zu Finanzanlagen</act:name>
+  <act:id type="guid">09b0a34dab8bd8c0db3b41c4ca211f5e</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8160</act:code>
+  <act:description>8160 Erträge aus Abgang/Zuschreibung zu Finanzanlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8180 Buchwerte abgegangener sonstiger Finanzanlagen</act:name>
+  <act:id type="guid">8030339eefdd76064b642523bc3cf38c</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8180</act:code>
+  <act:description>8180 Buchwerte abgegangener sonstiger Finanzanlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8280 Zinsaufwand für Bankkredite</act:name>
+  <act:id type="guid">5526e2628c25cd6cdf85b0b8e282e8d4</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8280</act:code>
+  <act:description>8280 Zinsaufwand für Bankkredite</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8300 Abschreibung aktivierter Geldbeschaffungskosten</act:name>
+  <act:id type="guid">31ed09f626afcfd1aa1267225e636352</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8300</act:code>
+  <act:description>8300 Abschreibung aktivierter Geldbeschaffungskosten</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8310 Diskontzinsen-Aufwand</act:name>
+  <act:id type="guid">5290ea81b1a72c3ad5bc21f675d9aa3c</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8310</act:code>
+  <act:description>8310 Diskontzinsen-Aufwand</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8350 Nicht ausgenützte Lieferantenskonti</act:name>
+  <act:id type="guid">72d7ea2375d0ecff412fd21528e1d8d9</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8350</act:code>
+  <act:description>8350 Nicht ausgenützte Lieferantenskonti</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8400 a.o. Erträge</act:name>
+  <act:id type="guid">a5ae9deae9059a0c721d054f88eec2e3</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8400</act:code>
+  <act:description>8400 a.o. Erträge</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8450 a.o. Aufwendungen</act:name>
+  <act:id type="guid">a9e0cbe9e3bb2bbf70bdbc829f92885f</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8450</act:code>
+  <act:description>8450 a.o. Aufwendungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8500 Steuern vom Einkommen und Ertrag</act:name>
+  <act:id type="guid">8464923503cb3700e415d6ba3da0dcd4</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8500</act:code>
+  <act:description>8500 Steuern vom Einkommen und Ertrag</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8600 Erträge aus der Auflösung unversteuerter Rücklagen</act:name>
+  <act:id type="guid">3acd3be8cb0fc5e817838ad9e1a2e340</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8600</act:code>
+  <act:description>8600 Erträge aus der Auflösung unversteuerter Rücklagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8630 Erträge aus der Auflösung der Bewertungsreserve</act:name>
+  <act:id type="guid">31f4441585fad590df27dc03a30cb5ca</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8630</act:code>
+  <act:description>8630 Erträge aus der Auflösung der Bewertungsreserve</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8820 Zuweisung zur Rücklage gem. §12 EStG</act:name>
+  <act:id type="guid">51913d41d5466d7f431b92295cbfdda1</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8820</act:code>
+  <act:description>8820 Zuweisung zur Rücklage gem. §12 EStG</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8830 Zuweisung zur Bewertungsreserve</act:name>
+  <act:id type="guid">0214c12ef2438834ea6705beaf19c6e7</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8830</act:code>
+  <act:description>8830 Zuweisung zur Bewertungsreserve</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8850 Zuweisung zu Investitionszuschüssen</act:name>
+  <act:id type="guid">38113d80ef2bdbec554c18afeea8fde0</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8850</act:code>
+  <act:description>8850 Zuweisung zu Investitionszuschüssen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>8950 Zuweisung zu Gewinnrücklagen</act:name>
+  <act:id type="guid">0f59f78082e1c8e44135f541de36cc59</act:id>
+  <act:type>INCOME</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>8950</act:code>
+  <act:description>8950 Zuweisung zu Gewinnrücklagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">0c7bd55d818514911206e2d7a219e0b0</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9 Kapital-, Rücklagen-, Abschlusskonten</act:name>
+  <act:id type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9</act:code>
+  <act:description>9 Kapital-, Rücklagen-, Abschlusskonten</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9000 Gezeichnetes bzw. gewidmetes Kapital (Eigenkapital)</act:name>
+  <act:id type="guid">67cd229b19d105746c78390a7a0a090c</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9000</act:code>
+  <act:description>9000 Gezeichnetes bzw. gewidmetes Kapital (Eigenkapital)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9210 Ungebundene Kapitalrücklage</act:name>
+  <act:id type="guid">3c306d4e9344a268831254b710eac094</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9210</act:code>
+  <act:description>9210 Ungebundene Kapitalrücklage</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9330 Satzungsmäßige Gewinnrücklage</act:name>
+  <act:id type="guid">3d5dde561cb9a651a10c3b235726990f</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9330</act:code>
+  <act:description>9330 Satzungsmäßige Gewinnrücklage</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9350 Freie Gewinnrücklage</act:name>
+  <act:id type="guid">562eebdbc567a8b57aaabf342312b1f0</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9350</act:code>
+  <act:description>9350 Freie Gewinnrücklage</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9390 Bilanzgewinn/Bilanzverlust</act:name>
+  <act:id type="guid">aafbb53e11214d7ad6f136bd42afebc2</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9390</act:code>
+  <act:description>9390 Bilanzgewinn/Bilanzverlust</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9400 Privat</act:name>
+  <act:id type="guid">d9a0af9a5b8a0f7190f929fb9646f06e</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9400</act:code>
+  <act:description>9400 Privat</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9467 Gewinnvortrag</act:name>
+  <act:id type="guid">d9f86d194ce5c34b15cca7ada6fbc9da</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9467</act:code>
+  <act:description>9467 Gewinnvortrag</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9500 Bewertungsreserve zu ...</act:name>
+  <act:id type="guid">66ec732680e36911178db5aa6a1e3e28</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9500</act:code>
+  <act:description>9500 Bewertungsreserve zu ...</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9550 Investitionszuschüsse</act:name>
+  <act:id type="guid">206ada17c736cd90ea3935789cdd6f50</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9550</act:code>
+  <act:description>9550 Investitionszuschüsse</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9600 Sonstige unversteuerte Rücklagen</act:name>
+  <act:id type="guid">c798457f717d25cdfff66d97da8da5c9</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9600</act:code>
+  <act:description>9600 Sonstige unversteuerte Rücklagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9610 Rücklage gemäß § 10 EStG (IFB)</act:name>
+  <act:id type="guid">f31bd07ff05b431f589077f71dd8ea15</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9610</act:code>
+  <act:description>9610 Rücklage gemäß § 10 EStG (IFB)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9620 Rücklage gemäß § 12 EStG (ÜRL)</act:name>
+  <act:id type="guid">636252db5251be1b9972711264573c2e</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9620</act:code>
+  <act:description>9620 Rücklage gemäß § 12 EStG (ÜRL)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9640 Rücklage gemäß § 6 Z 2c EStG (FW-Forderungen)</act:name>
+  <act:id type="guid">e4ee97db319567495e44f1fff499f6da</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9640</act:code>
+  <act:description>9640 Rücklage gemäß § 6 Z 2c EStG (FW-Forderungen)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9700 Einlagen Stiller Gesellschafter</act:name>
+  <act:id type="guid">784e1ac55880c689bd7304885cac8df7</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9700</act:code>
+  <act:description>9700 Einlagen Stiller Gesellschafter</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9800 EBK</act:name>
+  <act:id type="guid">80d0e636d2a4638772e3e45138df3c13</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9800</act:code>
+  <act:description>9800 EBK</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9850 SBK</act:name>
+  <act:id type="guid">be84544d0021474981888578131ce87a</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9850</act:code>
+  <act:description>9850 SBK</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9890 GuV-Konten</act:name>
+  <act:id type="guid">675503de54b42be3ddad69aa3e451331</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9890</act:code>
+  <act:description>9890 GuV-Konten</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>9900 Evidenzkonten</act:name>
+  <act:id type="guid">40f28120941f5c2697a02b96e6a1e5eb</act:id>
+  <act:type>EQUITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>9900</act:code>
+  <act:description>9900 Evidenzkonten</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">bf6a4aff26b51b0e13c7e8cfdca6a998</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0 Anlagevermögen</act:name>
+  <act:id type="guid">8553a2ae87373930e3cf28b906e21330</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0</act:code>
+  <act:description>0 Anlagevermögen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0120 DV-Programme</act:name>
+  <act:id type="guid">f6d8c96aba2782a679f22406b370db3e</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0120</act:code>
+  <act:description>0120 DV-Programme</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0150 Geschäfts(Firmen)wert</act:name>
+  <act:id type="guid">5356e9be23253f7db918d3ca5b9b16d6</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0150</act:code>
+  <act:description>0150 Geschäfts(Firmen)wert</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0180 Geleistete Anzahlung auf immaterielle Vermögensgeg.</act:name>
+  <act:id type="guid">ae3a521bf87775631bffd696c8d45698</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0180</act:code>
+  <act:description>0180 Geleistete Anzahlung auf immaterielle Vermögensgeg. </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0200 Grundwert bebaute Grundstücke</act:name>
+  <act:id type="guid">6536d2369c8fddd7edc4c9bcfab61f8d</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0200</act:code>
+  <act:description>0200 Grundwert bebaute Grundstücke</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0210 Betriebs- und Geschäftsgebäude auf eigenem Grund </act:name>
+  <act:id type="guid">0aa445344f8ad2a704fe3096c2229991</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0210</act:code>
+  <act:description>0210 Betriebs- und Geschäftsgebäude auf eigenem Grund </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0290 Kumulierte Abschreibungen</act:name>
+  <act:id type="guid">178e5f7c42284423151809885b38552f</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0290</act:code>
+  <act:description>0290 Kumulierte Abschreibungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0300 Unbebaute Grundstücke </act:name>
+  <act:id type="guid">5dc02dc781778476d71614c6aabc42c5</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0300</act:code>
+  <act:description>0300 Unbebaute Grundstücke </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0400 Maschinen und maschinelle Anlagen</act:name>
+  <act:id type="guid">0b90f5303def3613d7a72f9f2a0dc73a</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0400</act:code>
+  <act:description>0400 Maschinen und maschinelle Anlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0490 kumulierte Abschreibungen von maschinellen Anlagen</act:name>
+  <act:id type="guid">df08464e46777ad24738a534d332f806</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0490</act:code>
+  <act:description>0490 kumulierte Abschreibungen von maschinellen Anlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0450 Geringwertige Vermögensgegenstände (Maschinen) </act:name>
+  <act:id type="guid">2ffafff6eb5fc08d347f1372d8f58778</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0450</act:code>
+  <act:description>0450 Geringwertige Vermögensgegenstände (Maschinen) </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0540 Geringwertige Vermögensgegenstände (Werkzeuge)</act:name>
+  <act:id type="guid">d1633920c20c898363ae70d37f139f73</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0540</act:code>
+  <act:description>0540 Geringwertige Vermögensgegenstände (Werkzeuge)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0600 Büroeinrichtungen</act:name>
+  <act:id type="guid">bba409c1f14b190148f12b4bfa4fe34a</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0600</act:code>
+  <act:description>0600 Büroeinrichtungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0630 PKW </act:name>
+  <act:id type="guid">67bbc32b219011f9eff058c16e21b10f</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0630</act:code>
+  <act:description>0630 PKW </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0640 LKW</act:name>
+  <act:id type="guid">3d7ffc1c828c428089c4e799473bf5da</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0640</act:code>
+  <act:description>0640 LKW</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0680 Geringwertige Vermögensgegenstände</act:name>
+  <act:id type="guid">79e69f828c5d3fdd5e7e65704eea5a52</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0680</act:code>
+  <act:description>0680 Geringwertige Vermögensgegenstände</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0710 Anlagen im Bau</act:name>
+  <act:id type="guid">d1eaef93fcad2da9aba0c224267d9826</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0710</act:code>
+  <act:description>0710 Anlagen im Bau</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0800 Beteiligungen an verbundenen Unternehmen</act:name>
+  <act:id type="guid">b4a8448c19dc51103f6475854ae6e2de</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0800</act:code>
+  <act:description>0800 Beteiligungen an verbundenen Unternehmen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0830 Sonstige Beteiligungen</act:name>
+  <act:id type="guid">74f4db6c2a29a42a75e6f9d8220ad90d</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0830</act:code>
+  <act:description>0830 Sonstige Beteiligungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0840 Ausleihungen an verbundene Unternehmen</act:name>
+  <act:id type="guid">a9631e7d41e300c0ab006a3e95539ec8</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0840</act:code>
+  <act:description>0840 Ausleihungen an verbundene Unternehmen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0850 Ausleihungen an Beteiligungsunternehmen</act:name>
+  <act:id type="guid">d75542f48a7646bfcdcc11893fbfd9c6</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0850</act:code>
+  <act:description>0850 Ausleihungen an Beteiligungsunternehmen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0922 Wertpapiere für Abfertigungsvorsorge</act:name>
+  <act:id type="guid">4242023d1057bf9585902c37b7bc9085</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0922</act:code>
+  <act:description>0922 Wertpapiere für Abfertigungsvorsorge</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>0930 Geleistete Anzahlung auf Finanzanlagen</act:name>
+  <act:id type="guid">c703fa726887e088cf65f648a8a4eadb</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>0930</act:code>
+  <act:description>0930 Geleistete Anzahlung auf Finanzanlagen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">8553a2ae87373930e3cf28b906e21330</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1 Vorräte</act:name>
+  <act:id type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1</act:code>
+  <act:description>1 Vorräte</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1100 Rohstoffe</act:name>
+  <act:id type="guid">fb6f2451f76b4852ba219f08be16d35e</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1100</act:code>
+  <act:description>1100 Rohstoffe</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1300 Hilfsstoffe</act:name>
+  <act:id type="guid">1f2e3ae2e1eae155169756738a1d286d</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1300</act:code>
+  <act:description>1300 Hilfsstoffe</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1400 Betriebsstoffe</act:name>
+  <act:id type="guid">7e6323acfbb841bb76d83015496c796f</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1400</act:code>
+  <act:description>1400 Betriebsstoffe</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1500 Unfertige Erzeugnisse </act:name>
+  <act:id type="guid">aa3cf8abdcab8fac25ecb0142d90cfba</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1500</act:code>
+  <act:description>1500 Unfertige Erzeugnisse </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1550 Fertige Erzeugnisse</act:name>
+  <act:id type="guid">2d4213cf0c642d51e28e00c7c577f3d1</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1550</act:code>
+  <act:description>1550 Fertige Erzeugnisse</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1600 Waren (Handelswaren)</act:name>
+  <act:id type="guid">4b44314ddd16999bd2e30fd80953bc24</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1600</act:code>
+  <act:description>1600 Waren (Handelswaren)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1700 Noch nicht anrechenbare Leistungen </act:name>
+  <act:id type="guid">a0423b92006dae741af5a4e1bb201ee4</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1700</act:code>
+  <act:description>1700 Noch nicht anrechenbare Leistungen </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>1800 Geleistete Anzahlung auf Vorräte</act:name>
+  <act:id type="guid">2ec7aedf595bf6a9babdbaaf0b19c4ac</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>1800</act:code>
+  <act:description>1800 Geleistete Anzahlung auf Vorräte</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">36a34bd1f22adc9d61203dbc9c894b9d</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2 Sonst. Umlaufvermögen &amp; Aktive Rechnungsabgrenzungsposten</act:name>
+  <act:id type="guid">733988eca47270e8721fe6b435a11d60</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2</act:code>
+  <act:description>2 Sonst. Umlaufvermögen &amp; Aktive Rechnungsabgrenzungsposten</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2000 Forderungen aus Lieferungen und Leistungen im Inland</act:name>
+  <act:id type="guid">da19082114bd5028f3527c5b568ed2d2</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2000</act:code>
+  <act:description>2000 Forderungen aus Lieferungen und Leistungen im Inland</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2040 Forderungen aus Nachnahmelieferungen </act:name>
+  <act:id type="guid">a0a7c7834650081d0cb89437ab727f54</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2040</act:code>
+  <act:description>2040 Forderungen aus Nachnahmelieferungen </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2050 Besitzwechsel </act:name>
+  <act:id type="guid">9de7d893d695d0d1a58b2c30c0f8c557</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2050</act:code>
+  <act:description>2050 Besitzwechsel </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2080 Einzel-WB zu Inlandsforderungen</act:name>
+  <act:id type="guid">bc7467e410160aa62f75fa111d9b2bb1</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2080</act:code>
+  <act:description>2080 Einzel-WB zu Inlandsforderungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2100 Forderung aus Lieferung und Leistung Ausland</act:name>
+  <act:id type="guid">b4119658414842005cfc5b2bf592c904</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2100</act:code>
+  <act:description>2100 Forderung aus Lieferung und Leistung Ausland</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2180 Einzel-WB zu Auslandsforderungen</act:name>
+  <act:id type="guid">f89137ac981b9cee09b92e55da2b09fa</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2180</act:code>
+  <act:description>2180 Einzel-WB zu Auslandsforderungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2200 Forderungen gegen verbundene Unternehmen</act:name>
+  <act:id type="guid">4ccb11d21e51a515a7e257ef51dfe33b</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2200</act:code>
+  <act:description>2200 Forderungen gegen verbundene Unternehmen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2230 Forderungen gegen Beteiligungsunternehmen</act:name>
+  <act:id type="guid">cc8f280be9c44c4e40d4d40fedfa5bf3</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2230</act:code>
+  <act:description>2230 Forderungen gegen Beteiligungsunternehmen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2300 Sonstige Forderungen (einschl. Antizipationen)</act:name>
+  <act:id type="guid">58105449c0b759b8a54670190c4b4ee4</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2300</act:code>
+  <act:description>2300 Sonstige Forderungen (einschl. Antizipationen)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2350 Gewährtes Dahrlehen</act:name>
+  <act:id type="guid">fe29939d2d264aaddd5091af2966d3e8</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2350</act:code>
+  <act:description>2350 Gewährtes Dahrlehen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2390 Gegebene Anzahlungen</act:name>
+  <act:id type="guid">0415c0f3f1eec40204b2c43854530dd0</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2390</act:code>
+  <act:description>2390 Gegebene Anzahlungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2500 Vorsteuer</act:name>
+  <act:id type="guid">2571d63c54eba81bb36c85c8ce26ea58</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2500</act:code>
+  <act:description>2500 Vorsteuer</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2510 Einfuhrumsatzsteuer</act:name>
+  <act:id type="guid">adc5c6a99399b4fd23d40545529d123f</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2510</act:code>
+  <act:description>2510 Einfuhrumsatzsteuer</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2520 Noch nicht verrechenbare Vorsteuer</act:name>
+  <act:id type="guid">1515b873f2b22bc5049e5ed9aae7c2a8</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2520</act:code>
+  <act:description>2520 Noch nicht verrechenbare Vorsteuer</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2540 KESt</act:name>
+  <act:id type="guid">c2037bb702f0d86242dc6420b4891e77</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2540</act:code>
+  <act:description>2540 KESt</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2600 Eigene Anteile</act:name>
+  <act:id type="guid">311be0c030bab26516c50a9842ba8ac3</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2600</act:code>
+  <act:description>2600 Eigene Anteile</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2610 Anteile an verbundenen Unternehmen</act:name>
+  <act:id type="guid">247bccc40c5f5094a5e346b5bd326f90</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2610</act:code>
+  <act:description>2610 Anteile an verbundenen Unternehmen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2650 Wertpapiere des Umlaufvermögens</act:name>
+  <act:id type="guid">56d71584cfca050d475239483e2856fb</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2650</act:code>
+  <act:description>2650 Wertpapiere des Umlaufvermögens</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2700 Kassenbestände</act:name>
+  <act:id type="guid">584664c9efb7b54de1d99d1c8718b5ed</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2700</act:code>
+  <act:description>2700 Kassenbestände</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2780 (Erhaltene) Schecks</act:name>
+  <act:id type="guid">b7fcfa8427401d83baeb5a9702d06bf3</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2780</act:code>
+  <act:description>2780 (Erhaltene) Schecks</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2800 Guthaben bei Banken </act:name>
+  <act:id type="guid">4235fa0b0f2826b73ff366a22db8dc4e</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2800</act:code>
+  <act:description>2800 Guthaben bei Banken </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2810 PSK</act:name>
+  <act:id type="guid">5297c0dbd5dd07cef225a7dff7ba00f6</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2810</act:code>
+  <act:description>2810 PSK</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2900 Aktive Rechnungsabgrenzung (ARA)</act:name>
+  <act:id type="guid">73122d61054c427c1d840c18827c81a9</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2900</act:code>
+  <act:description>2900 Aktive Rechnungsabgrenzung (ARA)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>2950 Geldbeschaffungskosten, Disagio</act:name>
+  <act:id type="guid">5aa5034801c5e2f437357b3c1861b0a6</act:id>
+  <act:type>ASSET</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>2950</act:code>
+  <act:description>2950 Geldbeschaffungskosten, Disagio</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">733988eca47270e8721fe6b435a11d60</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3 Rückstellungen, Verbindlichkeiten &amp; pass. Rechnungsabgrenzungsposten</act:name>
+  <act:id type="guid">a517590e74c6ff09d49de59027664da3</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3</act:code>
+  <act:description>3 Rückstellungen, Verbindlichkeiten &amp; pass. Rechnungsabgrenzungsposten</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+    <slot>
+      <slot:key>placeholder</slot:key>
+      <slot:value type="string">true</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">164865d8f6dac7139ca14ba9ba1a7669</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3000 Rückstellungen für Abfertigungen</act:name>
+  <act:id type="guid">116fcd93f594eb1fadece39ec4d4e2f1</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3</act:code>
+  <act:description>3000 Rückstellungen für Abfertigungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3010 Rückstellung für Pensionen </act:name>
+  <act:id type="guid">a67d20c095b50b2afdb9b0bb1d38fb0d</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3010</act:code>
+  <act:description>3010 Rückstellung für Pensionen </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3060 Sonstige Rückstellungen</act:name>
+  <act:id type="guid">6ebd21dafaa076e6d9c3b9e83b3e0770</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3060</act:code>
+  <act:description>3060 Sonstige Rückstellungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3080 Rückstellungen für Rechts- und Beratungsaufwand</act:name>
+  <act:id type="guid">b52909c23438f4488801729ae3b58de9</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3080</act:code>
+  <act:description>3080 Rückstellungen für Rechts- und Beratungsaufwand</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3200 Anleihen einschließlich Wandelschuldverschreibungen</act:name>
+  <act:id type="guid">7ca6bedd12addf82b49469beff4220a8</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3200</act:code>
+  <act:description>3200 Anleihen einschließlich Wandelschuldverschreibungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3210 Verbindlichkeiten gegenüber Banken</act:name>
+  <act:id type="guid">c98326fd1fe1394df284cfe5331d16db</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3210</act:code>
+  <act:description>3210 Verbindlichkeiten gegenüber Banken</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3250 Darlehen</act:name>
+  <act:id type="guid">db807ecb398d9e4afb729380486c1a53</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3250</act:code>
+  <act:description>3250 Darlehen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3280 (Gegebene) Schecks</act:name>
+  <act:id type="guid">7b365eb585e1593a49c2782aa1be1f9b</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3280</act:code>
+  <act:description>3280 (Gegebene) Schecks</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3290 Erhaltene Anzahlung auf Bestellungen</act:name>
+  <act:id type="guid">6aa18b8a7285a7f789e7131a26eb4d58</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3290</act:code>
+  <act:description>3290 Erhaltene Anzahlung auf Bestellungen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3300 Verbindlichkeiten aus Lieferung und Leistung Inland</act:name>
+  <act:id type="guid">cabd03deb493c067655f73e4f48aeed1</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3300</act:code>
+  <act:description>3300 Verbindlichkeiten aus Lieferung und Leistung Inland</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3301 Lieferantenkonto Firma Bosch </act:name>
+  <act:id type="guid">5b1984164ff33162acf2afa34c6837b7</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3301</act:code>
+  <act:description>3301 Lieferantenkonto Firma Bosch </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3360 Schuldwechsel</act:name>
+  <act:id type="guid">b5ac12af9d7783821e81b9f12873c6b4</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3360</act:code>
+  <act:description>3360 Schuldwechsel</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3400 Verbindlichkeiten gegenüber verbundenen Untern.</act:name>
+  <act:id type="guid">df1c7880b4a61fbf6f2b9004448eadac</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3400</act:code>
+  <act:description>3400 Verbindlichkeiten gegenüber verbundenen Untern.</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3430 Verbindlichkeiten gegenüber beteiligte Unternehmen</act:name>
+  <act:id type="guid">0beed08a6bc0e45da7f6ce71a34159af</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3430</act:code>
+  <act:description>3430 Verbindlichkeiten gegenüber beteiligte Unternehmen</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3480 Darlehen von Gesellschaftern </act:name>
+  <act:id type="guid">f88a6ccd1385b8b5b4d96086be7dfc2a</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3480</act:code>
+  <act:description>3480 Darlehen von Gesellschaftern </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3500 Umsatzsteuer</act:name>
+  <act:id type="guid">b8eee5ce349e7da5dd6574d2a65a42cd</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3500</act:code>
+  <act:description>3500 Umsatzsteuer</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3520 Finanzamt-Zahllast </act:name>
+  <act:id type="guid">ff4f5ae28ba6aae32e7590426259c4a4</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3520</act:code>
+  <act:description>3520 Finanzamt-Zahllast </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3530 Finanzamt-Lohnsteuer, DB, DZ</act:name>
+  <act:id type="guid">6339a2b7a6e7369a44454510ab557879</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3530</act:code>
+  <act:description>3530 Finanzamt-Lohnsteuer, DB, DZ</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3600 Verrechnungskonto Sozialversicherung </act:name>
+  <act:id type="guid">c0a14b955373d1e3ba696f68d629e4d6</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3600</act:code>
+  <act:description>3600 Verrechnungskonto Sozialversicherung </act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3610 Verrechnungskonto Kommunalsteuer</act:name>
+  <act:id type="guid">e3728d86cbfece4b7e836c3d8699b623</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3610</act:code>
+  <act:description>3610 Verrechnungskonto Kommunalsteuer</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3630 Verrech.konto Löhne &amp; Gehälter (noch nicht ausbezahlt)</act:name>
+  <act:id type="guid">753a134d0cce87a59ad8b2276f5a33e3</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3630</act:code>
+  <act:description>3630 Verrech.konto Löhne &amp; Gehälter (noch nicht ausbezahlt)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3700 Sonstige Verbindlichkeiten (einschl. Antizipationen)</act:name>
+  <act:id type="guid">17cbf52cfa1f35fb82abca3962e498bf</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3700</act:code>
+  <act:description>3700 Sonstige Verbindlichkeiten (einschl. Antizipationen)</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+<gnc:account version="2.0.0">
+  <act:name>3900 Passive Rechnungsabgrenzung</act:name>
+  <act:id type="guid">12fa00205cf1026f2d35916486ededb4</act:id>
+  <act:type>LIABILITY</act:type>
+  <act:commodity>
+    <cmdty:space>ISO4217</cmdty:space>
+    <cmdty:id>EUR</cmdty:id>
+  </act:commodity>
+  <act:commodity-scu>100</act:commodity-scu>
+  <act:code>3900</act:code>
+  <act:description>3900 Passive Rechnungsabgrenzung</act:description>
+  <act:slots>
+    <slot>
+      <slot:key>color</slot:key>
+      <slot:value type="string">Not Set</slot:value>
+    </slot>
+  </act:slots>
+  <act:parent type="guid">a517590e74c6ff09d49de59027664da3</act:parent>
+</gnc:account>
+</gnc-v2>
+
+<!-- Local variables: -->
+<!-- mode: xml        -->
+<!-- End:             -->
