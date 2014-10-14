@@ -10,11 +10,12 @@
 \pagestyle{scrheadings}
 
 \begin{document}
+
 \title{Beispiel 6: Beschaffung und Absatz}
 \author{Dipl.-Ing. Herbert Mühlburger}
 \maketitle
 
-Bei diesem Beispiel sind einerseits die Käufersicht und andererseits die Sicht des Verkäufers zu berücksichtigen.
+Bei diesem Beispiel sind die Käufersicht und Verkäufersicht zu berücksichtigen. Zudem werden Vorsteuer und Umsatzsteuer jetzt auch mitberücksichtigt.
 
 \section{Sicht des Käufers}
 
@@ -64,5 +65,37 @@ Die Bezahlung erfolgt, wie im Beispiel angegeben am 17.10.:
 \end{center}
 
 \section{Sicht des Verkäufers}
+
+\minisec{(1) 10.10. Verkauf (netto)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (2000) Forderungen & 640.- &\\
+		an & (4000) Umsatzerlöse & & 640.- \\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(1) 10.10. Verkauf (Umsatzsteuer)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (2000) Forderungen & 64.- &\\
+		an & (3300) Umsatzsteuer & & 64.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+Am 19.10. erscheint das Guthaben am Tagesauszug der Fleischerei.
+
+\minisec{(3) 19.10. Einzahlung}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (2800) Bank & 704.- &\\
+		an & (2000) Forderungen & & 704.- \\
+		\bottomrule
+	\end{tabularx}
+\end{center}
 
 \end{document}
