@@ -1,4 +1,6 @@
-bubi
-====
+# BUBI - Buchhaltung und Bilanzierung
 
-Gnucash Einheitskontenrahmen (EKR) für die Lehrveranstaltung "Buchhaltung und Bilanzierung" an der TU Graz.
+This repository contains the following information:
+
+1. Lecture notes on "Accounting" at Graz University of Technology
+2. Account hierarchy for Gnucash. In German it is called "Einheitskontenrahmen (EKR)". This account hierarchy is used in the lecture "Buchhaltung und Bilanzierung"
