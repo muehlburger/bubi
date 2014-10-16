@@ -1,0 +1,653 @@
+\documentclass[parskip=half,12pt,a4paper]{scrartcl}
+\usepackage{ucs}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[naustrian]{babel}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[automark]{scrpage2}
+\pagestyle{scrheadings}
+
+\begin{document}
+\title{Beispiel 5: Eröffnung und Abschluss von Konten}
+\author{Dipl.-Ing. Herbert Mühlburger}
+\maketitle
+
+Die folgenden Schritte sind in diesem Beispiel durchzuführen:
+\begin{enumerate}
+	\item Eröffnungsbilanz erstellen
+	\item Eröffnungsbuchungen durchführen
+	\item Verbuchung der laufenden Geschäftsfälle
+	\item Nachbuchungen durchführen
+	\item Abschlussbuchungen
+\end{enumerate}
+
+\section{Eröffnungsbilanz}
+Aus dem Eröffnungsinventar lt. Angabe lässt sich die Eröffnungsbilanz erstellen. Das Eigenkapital berechnet sich aus der Differenz zwischen der Bilanzsumme (Euro 3.280.000.-) und dem Fremdkapital (Euro 458.000.-).
+
+\minisec{Eröffnungsbilanz}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{Eröffnungsbilanz}\\
+		\toprule
+		Anlagevermögen & & Eigenkapital & 2.822.000.-\\
+		(0400) Maschinen & 1.500.000.- & &\\
+		(0640) Fuhrpark & 450.000.- & &\\
+		Umlaufvermögen & & &\\
+		(2700) Kassa & 365.000.- & Fremdkapital &\\
+		(2000) Forderungen & 185.000.- & (3300) Verbindlichkeiten & 158.000.-\\
+		(1600) Waren (Handelswaren) & 780.000.- & (3210) Bankkredit & 300.000.-\\
+		\bottomrule
+		Summe & 3.280.000.- & Summe & 3.280.000.-\\
+	\end{tabular}
+\end{center}
+
+\section{Eröffnungsbuchungen}
+
+Ausgehend von der Eröffnungsbilanz werden die Anfangsbestände aller betroffenen aktiven und passiven Bestandskonten verbucht. Dazu wird das Hilfskonto (9800) Eigenkapitalkonto verwendet. Dieses wird benötigt, da jede Buchung sowohl im Soll als auch im Haben gebucht werden muss.
+
+\minisec{(1)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (0400) Maschinen & 1.500.000.- &\\
+ an & (9800) Eröffnungsbilanzkonto & & 1.500.000.-\\
+ \bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(2)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (0640) Fuhrpark & 450.000.- &\\
+		an & (9800) Eröffnungsbilanzkonto & & 450.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(3)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (2700) Kassa & 365.000.- &\\
+		an & (9800) Eröffnungsbilanzkonto & & 365.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(4)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (2000) Forderungen & 185.000.- &\\
+		an & (9800) Eröffnungsbilanzkonto & & 185.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(5)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (1600) Waren (Handeslwaren) & 780.000.- &\\
+		an & (9800) Eröffnungsbilanzkonto & & 780.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(6)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9800) Eröffnungsbilanzkonto & 158.000.- &\\
+		an & (3300) Verbindlichkeiten & & 158.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(7)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9800) Eröffnungsbilanzkonto & 300.000.- &\\
+		an & (3210) Bankkredit & & 300.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(8)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9800) Eröffnungsbilanzkonto & 2.822.000.- &\\
+ an & (9000) Eigenkapitalkonto (EKK) & & 2.822.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Das Eröffnungsbilanzkonto stellt somit die spiegelverkehrte Version der Eröffnungsbilanz dar.
+
+\minisec{Eröffnungsbilanzkonto}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(9800) Eröffnungsbilanzkonto (EBK)}\\
+		\toprule
+		Eigenkapital & 2.822.000.- & Anlagevermögen &\\
+		& & (0400) Maschinen & 1.500.000.-\\
+		& & (0640) Fuhrpark & 450.000.-\\
+		& & Umlaufvermögen &\\
+		Fremdkapital & & (2700) Kassa & 365.000.-\\
+		(3300) Verbindlichkeiten & 158.000.- & (2000) Forderungen & 185.000.-\\
+		(3210) Bankkredit & 300.000.- & (1600) Waren (Handeslwaren) & 780.000.-\\
+		\bottomrule
+		Summe & 3.280.000.- & Summe & 3.280.000.-\\
+	\end{tabular}
+\end{center}
+
+Damit sind die Eröffnungsbuchungen abgeschlossen. Alle weiteren Buchungen betreffen die laufenden Geschäftsfälle.
+
+\section{Verbuchung der laufenden Geschäftsfälle}
+
+Bei der Verbuchung der laufenden Geschäftsfälle dieses Beispiels wird die Umsatzsteuer nicht berücksichtigt.
+
+Wareneinkauf auf Ziel:
+
+\minisec{(9)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (1600) Waren (Handeslwaren) & 400.000.- &\\
+ an & (3300) Verbindlichkeiten & & 400.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Warenverkauf auf gegen Barzahlung:
+
+\minisec{(10)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (2700) Kassa & 150.000.- &\\
+		an & (4000) Umsatzerlöse & & 150.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+Kunde zahlt Forderungen:
+
+\minisec{(11)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (2700) Kassa & 150.000.- &\\
+		an & (2000) Forderungen & & 150.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+Barbezahlung der Löhne:
+
+\minisec{(12)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (6000) Löhne & 350.000.- &\\
+		an & (2700) Kassa & & 350.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+Barzahlung von Reparaturen:
+
+\minisec{(13)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (7200) Instandhaltung durch Dritte & 50.000.- &\\
+		an & (2700) Kassa & & 50.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+Barzahlung von Lieferverbindlichkeiten:
+
+\minisec{(14)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (3300) Verbindlichkeiten & 150.000.- &\\
+		an & (2700) Kassa & & 150.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+Barzahlung der Zinsen:
+
+\minisec{(15)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (8280) Zinsaufwand & 20.000.- &\\
+		an & (2700) Kassa & & 20.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+Warenverkauf auf Ziel:
+
+\minisec{(16)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (2000) Forderungen & 670.000.- &\\
+		an & (4000) Umsatzerlöse & & 670.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\section{Nachbuchungen}
+
+In den Nachbuchungen wird der Handelswarenverbrauch berücksichtigt.
+
+Die Inventur beträgt der Warenbestand Euro 150.000.-. Dadurch kann der Handelswarenverbrauch berechnet werden:
+
+Wareneinsatz:
+
+\begin{center}
+	\begin{tabular}{lr}
+		Anfangsbestand Handelswaren & 780.000.-\\
+		+ Zukauf Handelswaren & 400.000.-\\
+		\midrule
+		= Summe & 1.180.000.-\\
+		-- Endbestand Handelswaren & 150.000.-\\
+		\midrule
+		= Handelswarenverbrauch & 1.030.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+Dieser Warenverbrauch wird jetzt auch verbucht.
+
+\minisec{(17)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (5300) Handelswarenverbrauch & 1.030.000.- &\\
+ an & (1600) Waren (Handelswaren) & & 1.030.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section{Abschlussbuchungen}
+\subsection{G\&V Buchungen}
+
+Im nächsten Schritt werden alle Erfolgskonten (Aufwands- und Ertragskonten) gegen das Gewinn und Verlustkonto (GuV-Konto) abgeschlossen. Das GuV-Konto wird danach gegen das Eigenkapitalkonto (EKK) abgeschlossen.
+
+\minisec{(18)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (4000) Umsatzerlöse Inland (20\% USt) & 820.000.- &\\
+		an & (9890) GuV & & 820.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(19)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9890) GuV & 1.030.000.- &\\
+		an & (5300) Handelswarenverbrauch & & 1.030.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(20)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9890) GuV & 350.000.- &\\
+		an & (6000) Löhne & & 350.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(21)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9890) GuV & 50.000.- &\\
+ an & (7200) Instandhaltung durch Dritte & & 50.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(22)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9890) GuV & 20.000.- &\\
+		an & (8280) Zinsaufwand & & 20.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(23)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9000) Eigenkapitalkonto & 630.000.- &\\
+ an & (9890) GuV & & 630.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+Jetzt wird das Eigenkapital noch auf das Schlussbilanzkonto übertragen und somit das Eigenkapitalkonto abgeschlossen.
+
+\minisec{(24)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9000) Eigenkapitalkonto & 2.192.000.- &\\
+		an & (9850) SBK & & 2.192.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\subsection{Schlussbilanzbuchungen}
+Im nächsten Schritt werden alle Bestandskonten (aktive und passive) gegen das Schlussbilanzkonto abgeschlossen. Dazu müssen natürlich vorher wieder die Salden der einzelnen Konten ermittelt werden.
+
+\minisec{(25)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9850) SBK & 150.000.- &\\
+ an & (1600) Waren (Handelswaren) & & 150.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(26)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9850) SBK & 1.500.000.- &\\
+		an & (0400) Maschinen & & 1.500.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(27)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9850) SBK & 450.000.- &\\
+		an & (0640) Fuhrpark & & 450.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(28)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (9850) SBK & 705.000.- &\\
+		an & (2000) Forderungen & & 705.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\minisec{(29)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (9850) SBK & 95.000.- &\\
+ an & (2700) Kassa & & 95.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(30)}
+\begin{center}
+\begin{tabularx}{\textwidth}{rXrr}
+ \toprule
+    & (3300) Verbindlichkeiten & 408.000.- &\\
+ an & (9850) SBK & & 408.000.-\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\minisec{(31)}
+\begin{center}
+	\begin{tabularx}{\textwidth}{rXrr}
+		\toprule
+		& (3210) Bankkredit & 300.000.- &\\
+		an & (9850) SBK & & 300.000.-\\
+		\bottomrule
+	\end{tabularx}
+\end{center}
+
+\section{Hauptbuch (dargestellt als T-Konten)}
+
+\subsection{aktive Bestandskonten}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(0400) Maschinen}\\
+		\toprule
+		(1) & 1.500.000.- & (26) & 1.500.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(0640) Fuhrpark}\\
+		\toprule
+		(2) & 450.000.- & (27) & 450.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(1600) Waren (Handelswaren)}\\
+		\toprule
+		(5) & 780.000.- & (17) & 1.030.000.-\\
+		(9) & 400.000.- & (25) & 150.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(2000) Forderungen}\\
+		\toprule
+		(4) & 185.000.- & (11) & 150.000.-\\
+		(16) & 670.000.- & (28) & 705.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(2700) Kassa}\\
+		\toprule
+		(3) & 365.000.- & (12) & 350.000.-\\
+		(10) & 150.000.- & (13) & 50.000.-\\
+		(11) & 150.000.- & (14) & 150.000.-\\
+		& & (15) & 20.000.-\\
+		& & (29) & 95.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\subsection{passive Bestandskonten}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(3210) Bankkredit}\\
+		\toprule
+		(31) & 300.000.- & (7) & 300.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(3300) Verbindlichkeiten}\\
+		\toprule
+		(14) & 150.000.- & (6) & 158.000.-\\
+		(30) & 408.000.- & (9) & 400.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\subsection{Ertragskonten}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(4000) Umsatzerlöse Inland (20\% USt)}\\
+		\toprule
+		(18) & 820.000.- & (10) & 150.000.-\\
+		& & (16) & 670.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\subsection{Aufwandskonten}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(5300) Handelswarenverbrauch}\\
+		\toprule
+		(17) & 1.030.000.-& (19) & 1.030.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(6000) Löhne}\\
+		\toprule
+		(12) & 350.000.-& (20) & 350.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(7200) Instandhaltung durch Dritte}\\
+		\toprule
+		(13) & 50.000.-& (21) & 50.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(8280) Zinsaufwand}\\
+		\toprule
+		(15) & 20.000.-& (22) & 20.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\subsection{Hilfskonten}
+
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{(9890) GuV}\\
+		\toprule
+		(19) & 1.030.000.- & (18) & 820.000.-\\
+		(20) & 350.000.- & (23) & 630.000.- (Verlust)\\
+		(21) & 50.000.- & &\\
+		(22) & 20.000.- & &\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lr|lr}
+	\multicolumn{4}{c}{(9000) Eigenkapitalkonto}\\
+	\toprule
+	(23) & 630.000.- & (8) & 2.822.000.-\\
+	(24) & 2.192.000.- & &\\
+	\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{lr|lr}
+\multicolumn{4}{c}{(9850) Schlussbilanzkonto (SBK)}\\
+\toprule
+	(25) & 150.000.- & (24) & 2.192.000.-\\
+	(26) & 1.500.000.- & (30) & 408.000.-\\
+	(27) & 450.000.- & (31) & 300.000.-\\
+	(28) & 705.000.- & &\\
+	(29) & 95.000.- & &\\
+	\bottomrule
+\end{tabular}
+\end{center}
+
+Die Gewinnermittlung über den Reinvermögensvergleich wird folgendermaßen durchgeführt:
+
+\minisec{Eröffnungsbilanz}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{Eröffnungsbilanz}\\
+		\toprule
+		Anlagevermögen & & Eigenkapital & 2.822.000.-\\
+		(0400) Maschinen & 1.500.000.- & &\\
+		(0640) Fuhrpark & 450.000.- & &\\
+		Umlaufvermögen & & &\\
+		(2700) Kassa & 365.000.- & Fremdkapital &\\
+		(2000) Forderungen & 185.000.- & (3300) Verbindlichkeiten & 158.000.-\\
+		(1600) Waren (Handelswaren) & 780.000.- & (3210) Bankkredit & 300.000.-\\
+		\bottomrule
+		Summe & 3.280.000.- & Summe & 3.280.000.-\\
+	\end{tabular}
+\end{center}
+
+\minisec{Schlussbilanz}
+\begin{center}
+	\begin{tabular}{lr|lr}
+		\multicolumn{4}{c}{Schlussbilanz}\\
+		\toprule
+		Anlagevermögen & & Eigenkapital & 2.192.000.-\\
+		(0400) Maschinen & 1.500.000.- & &\\
+		(0640) Fuhrpark & 450.000.- & &\\
+		Umlaufvermögen & & &\\
+		(2700) Kassa & 95.000.- & Fremdkapital &\\
+		(2000) Forderungen & 705.000.- & (3300) Verbindlichkeiten & 408.000.-\\
+		(1600) Waren (Handelswaren) & 450.000.- & (3210) Bankkredit & 300.000.-\\
+		\bottomrule
+		Summe & 2.900.000.- & Summe & 2.900.000.-\\
+	\end{tabular}
+\end{center}
+
+Die Ermittlung des Periodengewinnes durch Betriebsvermögensvergleich wird folgendermaßen durchgeführt:
+
+\begin{center}
+	\begin{tabular}{llrr}
+		Gesamtvermögen & Schlussbilanz & 2.900.000.- &\\
+		- Fremdkapital & Schlussbilanz & -708.000.- &\\
+		\midrule
+		Reinvermögen & Schlussbilanz & 2.192.000.- & 2.192.000.-\\		
+		Gesamtvermögen & Eröffnungsbilanz & 3.280.000.- &\\
+		- Fremdkapital & Eröffnungsbilanz & -458.000.- &\\
+		\midrule
+		Reinvermögen & Eröffnungsbilanz & 2.822.000.-& -2.822.000.-\\		
+		\midrule
+		Verlust & & & -630.000.-\\
+		\bottomrule
+	\end{tabular}
+\end{center}
+
+Somit ergibt sich ein Verlust von Euro \emph{630.000.-}.
+
+\end{document}
